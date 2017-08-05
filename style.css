@@ -1,0 +1,58 @@
+html, h1, h2, h3, ul, li, ol, p, a {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+body {
+  padding: auto;
+}
+h1 {
+  text-decoration: bold;
+  color: #BFBDD8;
+  padding: 15px;
+  text-align: center;
+}
+
+h2 {
+  text-decoration: italisized;
+  color: #8F68C9;
+  margin: 15px 0 15px 0;
+  border-bottom: 1px solid #BFBDD8;
+  padding-bottom: 3px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 0 10px 0;
+  background-image: image(AW6.JPG);
+}
+
+h3 {
+  color: #BDD8D1;
+  margin: 15px 0 15px 0;
+  border-bottom: 1px solid #BDD8D1;
+  padding-bottom: 3px;
+  text-align: center;
+}
+
+p {
+  color: #9DC4D2;
+  padding-left: 50px;
+}
+li {
+  color: #9DC4D2;
+  padding-left: 50px;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: #8F68C9;
+}
+ul li {
+  display: inline;
+}
+.artwork {
+  display: inline-grid;
+}
