@@ -2,15 +2,22 @@ html, h1, h2, h3, ul, li, ol, p, a {
   padding: 0;
   border: 0;
   margin: 0;
+  font-size: 100%;
+  font: inherit;
 }
 body {
-  padding: auto;
+  font-family: Arial, sans-serif;
+  width: 70%;
+  margin: 30px auto;
+
 }
 h1 {
   text-decoration: bold;
   color: #BFBDD8;
   padding: 15px;
   text-align: center;
+  font-weight: bolder;
+  font-size: 72px;
 }
 
 h2 {
@@ -20,14 +27,28 @@ h2 {
   border-bottom: 1px solid #BFBDD8;
   padding-bottom: 3px;
   text-align: center;
+  font-weight: bold;
+  font-size: 32px;
 }
+h3 {
+  text-align: center;
+  font-size: 1.65em;
+  margin: 0 0 30px;
+}
+h4 {
+  text-align: center;
+  font-size: 1.65em;
+  margin: 0 0 30px;
 
+}
 .header {
   padding: 10px 0 10px 0;
   background-image: image(AW6.JPG);
+  display: block;
+  margin: 0 auto 0 auto;
 }
 
-h3 {
+.nav {
   color: #BDD8D1;
   margin: 15px 0 15px 0;
   border-bottom: 1px solid #BDD8D1;
@@ -37,16 +58,16 @@ h3 {
 
 p {
   color: #9DC4D2;
-  padding-left: 50px;
+  padding-left: 5px;
 }
 li {
   color: #9DC4D2;
   padding-left: 50px;
 }
-a {
+.nav a {
   text-decoration: none;
 }
-a:hover {
+.nav a:hover {
   text-decoration: underline;
   color: #8F68C9;
 }
@@ -54,5 +75,91 @@ ul li {
   display: inline;
 }
 .artwork {
-  display: inline-grid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.artwork a {
+  display: inline-block;
+  margin-bottom: 8px;
+  width: calc(50% - 4px);
+  margin-right: 8px;
+  text-decoration: none;
+  color: #8F68C9;
+}
+.artwork a:nth-of-type(2n) {
+  margin-right: 0;
+}
+@media screen and (min-width: 50em) {
+  .artwork a {
+    width: calc(25% - 6px);
+  }
+}
+.artwork a:nth-of-type(2n) {
+  margin-right: 8px;
+}
+.artwork a:nth-of-type(4n) {
+  margin-right: 0;
+}
+.artwork a:hover img {
+  transform: scale(1.15);
+}
+.artwork figure {
+  margin: 0;
+  overflow: hidden;
+}
+.artwork figcaption {
+  margin-top: 20px;
+}
+.artwork img {
+  border: none;
+  width: 25%;
+  height: 25%;
+  display: block;
+  background: #ccc;
+  transition: transform .2s ease-in-out;
+}
+.apps img {
+  width: 3%;
+}
+.apps {
+  text-align: center;
+}
+.cform {
+  display: inline;
+}
+.cform p {
+  text-align: center;
+}
+label, input {
+  display: block;
+}
+label {
+  margin-bottom: 10px;
+}
+input {
+  width: 500px;
+  margin-bottom: 25px;
+}
+input [type=submit]{
+  width: 120px;
+  font-size: 30px;
+  border: 2px solid #000000;
+}
+
+input [type=text] {
+  border: 2px solid #000000;
+  font-size: 30px;
+  padding: 7px;
+}
+textarea {
+  width: 500px;
+  height: 400px;
+  padding: 7px;
+  border: 2px solid #000000;
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+input [type=checkbox], label [for=email-updates] {
+  display: inline;
 }
