@@ -75,49 +75,24 @@ ul li {
   display: inline;
 }
 .artwork {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px
 }
-.artwork a {
-  display: inline-block;
-  margin-bottom: 8px;
-  width: calc(50% - 4px);
-  margin-right: 8px;
-  text-decoration: none;
-  color: #8F68C9;
+.artwork: hover{
+  border: 1px solid #8F68C9;
 }
-.artwork a:nth-of-type(2n) {
-  margin-right: 0;
-}
-@media screen and (min-width: 50em) {
-  .artwork a {
-    width: calc(25% - 6px);
-  }
-}
-.artwork a:nth-of-type(2n) {
-  margin-right: 8px;
-}
-.artwork a:nth-of-type(4n) {
-  margin-right: 0;
-}
-.artwork a:hover img {
-  transform: scale(1.15);
-}
-.artwork figure {
-  margin: 0;
-  overflow: hidden;
-}
-.artwork figcaption {
-  margin-top: 20px;
-}
+
 .artwork img {
   border: none;
-  width: 25%;
-  height: 25%;
-  display: block;
-  background: #ccc;
-  transition: transform .2s ease-in-out;
+  width: 100%;
+  height: auto;
+}
+.desc {
+  padding: 15px;
+  text-align: center;
+
 }
 .apps img {
   width: 3%;
