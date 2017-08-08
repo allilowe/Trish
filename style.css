@@ -6,27 +6,32 @@ html, h1, h2, h3, ul, li, ol, p, a {
   font: inherit;
 }
 body {
-  font-family: Arial, sans-serif;
   width: 70%;
   margin: 30px auto;
 
 }
+/*NEW h1fontface submission frontend formations font face*/
+
 @font-face {
-  font-family: 'Megrim';
-  src: url('//fonts.googleapis.com/css?family=Megrim');
-  font-style: normal;
-  font-weight: normal;
+    font-family: 'introrustg-base2line';
+    src: url('introrustg-base2line-webfont.woff2') format('woff2'),
+         url('introrustg-base2line-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 h1 {
   color: #BFBDD8;
   padding: 15px;
   text-align: center;
   font-size: 72px;
-  font-family: 'Megrim', sans-serif;
+  font-family: 'introrustg-base2line', sans-serif;
 }
+/*NEW h1fontface submission frontend formations text shadow*/
 
 h2 {
-  text-decoration: italisized;
+  font-family: 'introrustg-base2line';
+  text-decoration: italic;
   color: #8F68C9;
   margin: 15px 0 15px 0;
   border-bottom: 1px solid #BFBDD8;
@@ -54,7 +59,7 @@ h5 {
 }
 header {
   padding: 10px 0 10px 0;
-  background-image: image(AW6.JPG);
+  background-image: image(conttoncandy16x20uf.jpg);
   display: block;
   margin: 0 auto 0 auto;
 }
@@ -79,6 +84,8 @@ li {
 footer img {
   width: 3%;
   border-radius: 50%;
+  transform: translate(-300px, 1500px);
+
 }
 .nav a {
   text-decoration: none;
@@ -99,6 +106,7 @@ ul li {
 .artwork: hover{
   border: 1px solid #8F68C9;
 }
+/*NEW h1fontface submission frontend formations border-radius*/
 
 .artwork img {
   border: none;
@@ -135,6 +143,8 @@ label {
   padding-top: 8px;
   color: #BDD8D1;
 }
+/*NEW h1fontface submission frontend formations box-shadow*/
+
 input {
   width: 500px;
   margin-bottom: 3px;
