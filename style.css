@@ -10,12 +10,11 @@ body {
   margin: 30px auto;
 
 }
-/*NEW h1fontface submission frontend formations font face*/
 
 @font-face {
     font-family: 'introrustg-base2line';
-    src: url('introrustg-base2line-webfont.woff2') format('woff2'),
-         url('introrustg-base2line-webfont.woff') format('woff');
+    src: url('Resources/introrustg-base2line-webfont.woff2') format('woff2'),
+         url('Resources/introrustg-base2line-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -26,11 +25,11 @@ h1 {
   text-align: center;
   font-size: 72px;
   font-family: 'introrustg-base2line', sans-serif;
+  text-transform: uppercase;
 }
-/*NEW h1fontface submission frontend formations text shadow*/
 
 h2 {
-  font-family: 'introrustg-base2line';
+  font-family: 'Megrim', 'introrustg-base2line';
   text-decoration: italic;
   color: #8F68C9;
   margin: 15px 0 15px 0;
@@ -143,13 +142,13 @@ label {
   padding-top: 8px;
   color: #BDD8D1;
 }
-/*NEW h1fontface submission frontend formations box-shadow*/
 
 input {
   width: 500px;
   margin-bottom: 3px;
   border: 1px solid #8F68C9;
   box-shadow: 2px 4px 4px #BDD8D1;
+
 }
 input [type=submit]{
   width: 120px;
@@ -160,6 +159,8 @@ input [type=text] {
   border: 10px solid #8F68C9;
   font-size: 30px;
   padding: 5px;
+  box-shadow: 2px 4px 4px #BDD8D1;
+
 }
 textarea {
   width: 500px;
@@ -173,13 +174,13 @@ textarea {
 input [type=checkbox], label [for=email-updates] {
   display: inline;
   border: 1px solid #8F68C9;
-  box-shadow: 2px 4px 4px #BDD8D1;
 }
 input [type=checkbox] {
   border: 1px solid #8F68C9;
-  box-shadow: 2px 4px 4px #BDD8D1;
 }
-
+#email-updates {
+  box-shadow: none; 
+}
 .about img {
   border-radius: 50%;
   display: inline;
